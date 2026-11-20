@@ -1,0 +1,86 @@
+[
+  {
+    "id": "B01",
+    "level": "basics",
+    "title": "Count error log entries",
+    "prompt": "Count lines whose second whitespace field is exactly ERROR.",
+    "script": "b01_count_errors.sh"
+  },
+  {
+    "id": "B02",
+    "level": "basics",
+    "title": "Unique users",
+    "prompt": "Print sorted unique values after user= in an application log.",
+    "script": "b02_users.sh"
+  },
+  {
+    "id": "B03",
+    "level": "basics",
+    "title": "Directory file size",
+    "prompt": "Sum sizes of regular files recursively, preserving paths with spaces.",
+    "script": "b03_total_bytes.sh"
+  },
+  {
+    "id": "B04",
+    "level": "basics",
+    "title": "Find text files",
+    "prompt": "Print relative paths of *.txt regular files under a directory, sorted.",
+    "script": "b04_text_files.sh"
+  },
+  {
+    "id": "I01",
+    "level": "intermediate",
+    "title": "Validate a TCP port",
+    "prompt": "Print VALID/exit 0 for decimal integers 1–65535, else INVALID/exit 1.",
+    "script": "i01_validate_port.sh"
+  },
+  {
+    "id": "I02",
+    "level": "intermediate",
+    "title": "Count requests per IP",
+    "prompt": "Count IPs from access log, sorted count descending then IP ascending.",
+    "script": "i02_ip_counts.sh"
+  },
+  {
+    "id": "I03",
+    "level": "intermediate",
+    "title": "Compute mean latency",
+    "prompt": "Print mean of latency_ms=N records to one decimal, or 0.0 if empty.",
+    "script": "i03_mean_latency.sh"
+  },
+  {
+    "id": "I04",
+    "level": "intermediate",
+    "title": "Atomic local copy",
+    "prompt": "Copy file with destination-adjacent temporary file and rename; reject bad sources.",
+    "script": "i04_atomic_copy.sh"
+  },
+  {
+    "id": "A01",
+    "level": "advanced",
+    "title": "Verify SHA256 manifest",
+    "prompt": "Check sha256sum-format manifest relative to its directory; print OK/FAIL.",
+    "script": "a01_verify_manifest.sh"
+  },
+  {
+    "id": "A02",
+    "level": "advanced",
+    "title": "Latency p90 nearest rank",
+    "prompt": "Print 90th percentile (nearest rank) of integer values, or 0 if empty.",
+    "script": "a02_p90.sh"
+  },
+  {
+    "id": "A03",
+    "level": "advanced",
+    "title": "Find failed units",
+    "prompt": "List failed service names from name<TAB>status rows, sorted; else NO_FAILURES.",
+    "script": "a03_failed_units.sh"
+  },
+  {
+    "id": "A04",
+    "level": "advanced",
+    "title": "Rotate log without overwrite",
+    "prompt": "Rename source log to new archive (never overwrite), create empty source.",
+    "script": "a04_rotate_log.sh"
+  }
+]
