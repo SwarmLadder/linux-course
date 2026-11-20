@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Check all Bash syntax
-        run: find labs/reference labs/starter -name '*.sh' -print0 | xargs -0 -n1 bash -n
+        run: find labs/reference labs/starter projects/examples -name '*.sh' -print0 | xargs -0 -n1 bash -n
       - name: Grade reference labs
         run: python tools/grade.py --verify-references
       - name: Run unit tests
